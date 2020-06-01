@@ -8,8 +8,8 @@
 
 // Function:
 function differenceInAges(ages){
-    var maxAge = Math.max(ages);
-    var minAge = Math.min(ages);
+    var maxAge = Math.max(...ages);
+    var minAge = Math.min(...ages);
     var difference = maxAge - minAge;
     return [minAge, maxAge, difference];
 }
