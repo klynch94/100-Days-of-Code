@@ -11,7 +11,9 @@
 
 // Function:
 function tripleTrouble(one, two, three){
+    // first I create a new variable to hold my new string
     var newString = []
+    // I need a for loop to run through each input and grab the first letter in each.
     for (var i = 0; i<one.length; i++) {
         newString.push(one[i]);
         newString.push(two[i]);
