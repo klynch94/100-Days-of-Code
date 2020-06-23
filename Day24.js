@@ -29,9 +29,9 @@ function calculateTip(amount, rating) {
         return Math.ceil(amount*0.1);
     } else if(rating === "poor") {
         return Math.ceil(amount*0.05);
-    } else if(rating +++ "terrible") {
+    } else if(rating === "terrible") {
         return 0;
     } else {
-        return "";
+        return "Rating not recognised";
     }
 }
