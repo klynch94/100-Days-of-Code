@@ -16,18 +16,12 @@ function capitalize(s){
     var odd = "";
     // for loop with if statement to uppercase and lowercase depending on even/odd
     for(var x=0; x<s.length; x++) {
-        if(s.indexOf(s[x])%2 === 0) {
+        if(x%2 === 0) {
             even += s[x].toUpperCase();
+            odd += s[x];
         } else {
             even += s[x];
-        }
-    }
-
-    for(var i=0; i<s.length; i++) {
-        if(s.indexOf(s[i])%2 === 0) {
-            odd += s[i];
-        } else {
-            odd += s[i].toUpperCase();
+            odd += s[x].toUpperCase();
         }
     }
     answer.push(even);
